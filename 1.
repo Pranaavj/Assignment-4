@@ -1,0 +1,12 @@
+public class minvalue {
+ 
+    public static void main(String args[])
+    {
+        double a = 12.123;
+        double b = 12.456;
+        
+ 
+        
+        System.out.println(Math.min(a, b));
+    }
+}
