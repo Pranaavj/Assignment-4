@@ -1,12 +1,13 @@
-public class minvalue {
- 
-    public static void main(String args[])
-    {
-        double a = 12.123;
-        double b = 12.456;
-        
- 
-        
-        System.out.println(Math.min(a, b));
-    }
+static int findMin(Queue q){
+   if ( q.size == 0 )
+      return 0;
+
+int min = q.front.item;
+while (q.front.next != null) {
+     if ( min > q.front.next.item ) {
+         min = q.front.next.item;
+         q.front = q.front.next;
+     }
+}
+return min;  
 }
